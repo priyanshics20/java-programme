@@ -1,0 +1,21 @@
+/*
+Print Factorial of n.
+ */
+package Apna_College;
+
+import java.util.Scanner;
+
+public class Recusion4 {
+    public static int factNum(int n){
+        if(n==1 || n==0)
+            return 1;
+        int factorial = n*factNum(n-1);
+        return factorial;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int ans = factNum(n);
+        System.out.println(ans);
+    }
+}

@@ -1,0 +1,19 @@
+/* print numbers from n to 1.
+ */
+package Apna_College;
+
+import java.util.Scanner;
+
+public class Recursion_Qus1 {
+    public static void printNum(int n){
+        if(n==0)
+            return;
+        System.out.print(n+" ");
+        printNum(n-1);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        printNum(n);
+    }
+}
